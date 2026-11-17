@@ -4,7 +4,7 @@
  * Keep colors and reusable theme values here.
  */
 :root {
-  --theme-color-primary: #66DF82;
+  --theme-color-primary: #66DF82; /*test*/
   --theme-color-secondary: #99E1AA;
   --theme-color-grey100: #747474;
   --theme-color-grey200: #333333;
