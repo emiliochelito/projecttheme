@@ -2,7 +2,7 @@
  * Footer
  */
 footer {
-  background-color: var(--theme-color-secondary);
+  background-color: var(--theme-color-grey200);
   display: flex;
   color: #ffffff;
 }
@@ -26,4 +26,85 @@ footer .footer-content {
 
 .footer-logo img {
   filter: brightness(0) invert(1);
+}
+
+.shareflare-footer {
+  display: grid;
+  width: 100%;
+  max-width: 1043px;
+  min-height: 256px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  margin-inline: auto;
+  padding: 37px 42px;
+  background: var(--theme-color-grey100);
+  color: #fff;
+  font-family: "Radio Canada", "Radio Canada Big", var(--theme-font-body);
+}
+
+.shareflare-footer__column {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.shareflare-footer__column--middle {
+  align-items: center;
+  text-align: left;
+}
+
+.shareflare-footer__column--right {
+  align-items: flex-end;
+  text-align: left;
+}
+
+.shareflare-footer__title,
+.shareflare-footer__item {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+}
+
+.shareflare-footer__title {
+  margin: 0 0 24px;
+  color: #fff;
+  white-space: nowrap;
+}
+
+.shareflare-footer__items {
+  display: flex;
+  flex-direction: column;
+  align-items: inherit;
+  gap: 0;
+}
+
+.shareflare-footer__item {
+  color: #fff;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.shareflare-footer__item--spaced {
+  margin-top: 24px;
+}
+
+@media (max-width: 767.98px) {
+  .shareflare-footer {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    padding: 32px 24px;
+  }
+
+  .shareflare-footer__column,
+  .shareflare-footer__column--middle,
+  .shareflare-footer__column--right {
+    align-items: flex-start;
+  }
+
+  .shareflare-footer__title,
+  .shareflare-footer__item {
+    font-size: 18px;
+  }
 }

@@ -2,7 +2,7 @@
  * Header
  */
 header {
-  background-color: white;
+  background-color: --theme-color-grey200;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -35,5 +35,142 @@ header {
 @media (min-width: 767px) {
   .site-logo {
     width: min(100%, 283px);
+  }
+}
+
+.shareflare-header {
+  display: flex;
+  position: relative;
+  width: 100%;
+  max-width: 1440px;
+  height: 80px;
+  align-items: center;
+  gap: 20px;
+  margin-inline: auto;
+  padding: 20px;
+  background: var(--theme-color-grey200);
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.12);
+  color: #fff;
+  font-family: var(--theme-font-body);
+}
+
+.shareflare-header__mark {
+  width: 40px;
+  height: 40px;
+  flex: 0 0 40px;
+  border-radius: 100px;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.shareflare-header__brand {
+  flex: 1 1 auto;
+  color: var(--theme-color-primary);
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 36px;
+  text-decoration: none;
+}
+
+.shareflare-header__right {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.shareflare-header__nav {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.shareflare-header__nav-item {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.shareflare-header__nav-item.is-active {
+  color: var(--theme-color-primary);
+  font-weight: 700;
+}
+
+.shareflare-header__search {
+  display: flex;
+  width: 200px;
+  height: 36px;
+  align-items: center;
+  gap: 4px;
+  padding: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+}
+
+.shareflare-header__search-input {
+  min-width: 0;
+  flex: 1 1 auto;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: #fff;
+  font-family: var(--theme-font-body);
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.shareflare-header__search-input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+  opacity: 1;
+}
+
+.shareflare-header__search-button {
+  display: inline-flex;
+  width: 20px;
+  height: 20px;
+  flex: 0 0 20px;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.shareflare-header__search-button img {
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+
+@media (max-width: 991.98px) {
+  .shareflare-header__right {
+    gap: 20px;
+  }
+
+  .shareflare-header__nav {
+    gap: 20px;
+  }
+
+  .shareflare-header__search {
+    width: 160px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .shareflare-header {
+    height: auto;
+    min-height: 80px;
+    flex-wrap: wrap;
+  }
+
+  .shareflare-header__right {
+    width: 100%;
+    align-items: center;
+  }
+
+  .shareflare-header__nav {
+    flex: 1 1 auto;
   }
 }

@@ -77,6 +77,27 @@ while (have_rows('page_modules')) : the_row();
 
     case 'google_map':
       get_template_part('template-parts/flex/layout', 'google-map'); break;
+
+    case 'home':
+      get_template_part('template-parts/flex/layout', 'home'); break;
+
+    case 'project_highlight':
+      get_template_part('template-parts/flex/layout', 'project-highlight'); break;
+
+    case 'thumbnail':
+      get_template_part('template-parts/flex/layout', 'thumbnail'); break;
+
+    case 'upload_form':
+      get_template_part('template-parts/flex/layout', 'upload-form'); break;
+
+    case 'genre_selector':
+      get_template_part('template-parts/flex/layout', 'genre-selector'); break;
+
+    case 'header':
+      get_template_part('template-parts/flex/layout', 'header'); break;
+
+    case 'footer':
+      get_template_part('template-parts/flex/layout', 'footer'); break;
   }
 
   if (function_exists('section_close')) {

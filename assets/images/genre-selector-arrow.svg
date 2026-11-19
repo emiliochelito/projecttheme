@@ -1,0 +1,16 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="20.7314" height="18.75" viewBox="0 0 20.7314 18.75" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="Polygon 1">
+<use xlink:href="#stroke0_0_5" fill="#D1D1D1"/>
+<mask id="stroke1_0_5" fill="white">
+<use xlink:href="#stroke0_0_5"/>
+</mask>
+<path d="M3.00447 18.75H17.7269C20.0363 18.75 21.4797 16.25 20.325 14.25L12.9638 1.5C11.8091 -0.499999 8.92232 -0.500001 7.76762 1.5L0.4064 14.25C-0.748301 16.25 0.695072 18.75 3.00447 18.75Z" stroke-width="2" stroke="url(#paint0_linear_0_5)" mask="url(#stroke1_0_5)"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_0_5" x1="10.3657" y1="26" x2="10.3657" y2="-3" gradientUnits="userSpaceOnUse">
+<stop stop-color="white"/>
+<stop offset="1" stop-color="#666666" stop-opacity="0"/>
+</linearGradient>
+<path id="stroke0_0_5" d="M7.76762 1.5C8.92232 -0.500001 11.8091 -0.499999 12.9638 1.5L20.325 14.25C21.4797 16.25 20.0363 18.75 17.7269 18.75H3.00447C0.695072 18.75 -0.748301 16.25 0.4064 14.25L7.76762 1.5Z"/>
+</defs>
+</svg>
